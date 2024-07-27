@@ -1,0 +1,123 @@
+@media screen and (max-width: 450px) {
+  .hero {
+      min-height: 300px;
+      background: url('/images/hero-image_2-small.jpg');
+  }
+}
+
+@media screen and (min-width: 451px) {
+  .hero {
+      background: url('/images/hero-image_2-large.jpg');
+  }
+}
+
+@media screen and (max-width: 1050px){
+  .headertitle {
+    font-size: 24px;
+  }
+  .navbar-item-list {
+    width: 30%;
+    font-size: 13px;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  .header-con {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 12px 25px;
+    margin-top: 0;
+  }
+  .nav-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 15px;
+    list-style-type: none;
+  }
+  .hdr-title {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 24px;
+  }
+  .menu_drawerr {
+    line-height: 44px;
+    margin-top: 0px;
+    color: #fff;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+
+  }
+  .nav {
+    z-index: 10;
+    background-color: #3C5B6F;
+    width: 100%;
+    position: absolute;
+    -webkit-transform: translate(100%, 0);
+    transform: translate(-100%, 0);
+    transition: transform 0.3s ease;
+    top: 92px;
+  }
+  .open {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  .navbar-item-list {
+    display: list-item;
+    border-bottom: 1px solid #14133e;
+    width: 100%;
+    text-align: left;
+  }
+
+  .menu-rest {
+    display: flex;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    margin: 15px auto;
+    padding: 15px 0px;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .nav-mobile {
+    display: none;
+  }
+  .inf-title {
+    font-size: 18px;
+  }
+  .info_city {
+    font-size: 14px;
+  }
+  .info_desc {
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    min-width: 1000px;
+  }
+  main {
+    max-width: 1200px;
+  }
+}
